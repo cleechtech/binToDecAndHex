@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kLab program</title>
+	
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<h1>Binary Conversion Tool</h1>
+<form>
+	<label for='binaryInput'>Enter a binary number</label>
+	<input type='text' placeholder='binary number' name='binaryInput'>
+	<input type='submit' value='Convert!'>
+</form>
+
+<br>
+
+<div id='error'>You didn't enter a valid binary number!</div>
+<div id='results'>
+	You entered: <span id='entered'></span>
+	<br>
+	Hex value: <span id='hex'></span>
+	<br>
+	Decimal value: <span id='dec'></span>
+</div>
+
+<script src='js/conversionUtils.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
